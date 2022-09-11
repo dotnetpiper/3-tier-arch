@@ -1,0 +1,50 @@
+#ACR_RG    = "acr_stg-rg"
+#VNET_RG   = "aks-stg-vnet-rg"
+vnet_name = "aks-stg-vnet"
+appgw_subnet_name = "appgwsubnet_stg"
+#rg_location = "eastus"
+aks_rg_location = "eastus"
+aks_rg = "RG-PMO-DCX-LCS-N-stg-007"
+cluster_name = "aks-lcs-ses-n-stg-007"
+min_count =1
+max_count= 3
+vm_size = "Standard_DS2_v2"
+node_count = 2
+max_pods = 30
+#aks_subnet_address_prefix = ["10.0.0.0/22"]
+app_gateway_subnet_address_prefix = ["10.0.4.0/24"]
+aksservicecidr = "172.100.0.0/24"
+dns_service_ip = "172.100.0.10"
+dockercidrip = "172.101.0.1/16"
+agent_pool_name = "stgnodepool"
+aks_enable_rbac = true
+log_analytics_workspace_sku ="PerGB2018"
+log_retention_in_days = 30
+cluster_log_analytics_workspace_name= "log-piper-aks-monitoring"
+dns_prefix = "stgakslcs"
+kubernetes_version = "1.20.9"
+os_disk_size_gb = 50
+enable_log_analytics_workspace = true
+gateway-ip-configuration_name = "gateway-ip-configuration"
+app_gateway_pip = "appgw-pip"
+app_gateway_name = "stage-sofbang-appgw"
+sku_name = "waf_v2"
+sku_tier = "waf_v2"
+frontend_port_port = "80"
+#backend_http_settings_name = "local.http_setting_name"
+backend_http_settings_cookie_based_affinity = "Disabled"
+backend_http_settings_port = "80"
+backend_http_settings_protocol = "Http"
+backend_http_settings_request_timeout = "60"
+appGw_waf_policy_name = "AppGwWafPolicy"
+Custom_rules_name = "OnlyUSandCanada"
+MatchRule = "MatchRule"
+# //disk_sizes   = "128/128/128/128"
+# //disk_caching = ["ReadOnly", "None", "None", "None"]
+
+
+client_secret   = ""
+subscription_id = ""
+client_id = ""
+
+
