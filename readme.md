@@ -1,7 +1,7 @@
-# AzureCLI to pull details of NetworkIP
+# AzureCLI to pull details of NetworkIP, returns output in JSON
 
 **$IP="20.29"**
-**az network public-ip list --query "[?ipAddress!=null]|[?contains(ipAddress, '$IP')].[id]" --output tsv**
+**az network public-ip list --query "[?ipAddress!=null]|[?contains(ipAddress, '$IP')].[id]" --output json**
 
 # resourceGraphQuery
 
