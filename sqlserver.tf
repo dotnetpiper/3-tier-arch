@@ -1,4 +1,4 @@
-resource "azurerm_sql_server" "example" {
+resource "azurerm_sql_server" "3tiersql" {
   name                         = "mssqlserver"
   resource_group_name          = azurerm_resource_group.pipersql.name
   location                     = azurerm_resource_group.pipersql.location
